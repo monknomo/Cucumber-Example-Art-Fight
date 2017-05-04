@@ -1,7 +1,7 @@
 Feature: Stuart Semple will sell Black 2.0 to any artist except Anish Kapoor
 
   Scenario Outline: Anish Kapoor tries to buy Black 2.0
-    Given a purchaser, <purchaser name>, Black 2.0 oh is <saleable>
+    Given a purchaser, <purchaser name>, Black 2.0 is <saleable>
     Examples:
       | purchaser name    | saleable     |
       | Anish Kapoor      | not saleable |

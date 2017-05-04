@@ -12,7 +12,7 @@ public class Stepdefs {
   public Stepdefs() {
   }
 
-  @Given("^a purchaser, (.*), Black 2\\.0 oh is (not saleable|saleable)$")
+  @Given("^a purchaser, (.*), Black 2\\.0 is (not saleable|saleable)$")
   public void testWhoCanPurchaseBlackTwoPointOh(String purchaser, String saleable) {
     boolean actual_saleable = BusinessRules.saleable(purchaser);
     boolean expected_saleable = saleable.equals("saleable");
